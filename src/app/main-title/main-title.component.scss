@@ -1,48 +1,38 @@
-img{
-    height: 40px;
-    width: 40px;
-   
+img {
+  height: 40px;
+  width: 40px;
 }
-.Topbar{
-    height:5rem;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    
+.Topbar {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
-.Topbar .Titlebox{
-    width: 40%;
-    height: 80%;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    border-bottom: 1px solid rgb(99, 110, 144);
-    
-   
+.Topbar .Titlebox {
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(99, 110, 144);
 }
 
-.Titlebox .Title{
-    font-family:cursive;
-    letter-spacing: 20px;
-    font-size: 32px;
-    color: rgb(99, 110, 144);
-    text-align: center;
-   
-   
+.Titlebox .Title {
+  font-family: cursive;
+  letter-spacing: 20px;
+  font-size: 32px;
+  color: rgb(99, 110, 144);
+  text-align: center;
 }
 
 @media only screen and (max-width: 1050px) and (min-width: 700px) {
-    .Topbar .Titlebox{
-        width: 80%;
-       
-    }
-
+  .Topbar .Titlebox {
+    width: 80%;
+  }
 }
 @media only screen and (max-width: 699px) and (min-width: 400px) {
-    .Topbar .Titlebox{
-        width: 90%;
-       
-    }
-
+  .Topbar .Titlebox {
+    width: 90%;
+  }
 }

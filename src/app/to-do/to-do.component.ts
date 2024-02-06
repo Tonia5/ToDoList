@@ -31,7 +31,7 @@ import { MainTitleComponent } from '../main-title/main-title.component';
     MatButtonModule,
     ReactiveFormsModule,
     DragDropModule,
-    MainTitleComponent
+    MainTitleComponent,
   ],
   templateUrl: './to-do.component.html',
   styleUrl: './to-do.component.scss',
@@ -59,20 +59,18 @@ export class ToDoComponent implements OnInit {
     this.todoForm.reset();
   }
 
-
   onEdit(item: ITask, i: number) {
     this.todoForm.controls['item'].setValue(item.description);
-    this.updateIndex=i;
-    this.isEditEnabled=true;
-
+    this.updateIndex = i;
+    this.isEditEnabled = true;
   }
 
-  updateTask(){
-    this.tasks[this.updateIndex].description=this.todoForm.value.item;
-    this.tasks[this.updateIndex].done=false;
+  updateTask() {
+    this.tasks[this.updateIndex].description = this.todoForm.value.item;
+    this.tasks[this.updateIndex].done = false;
     this.todoForm.reset();
-    this.updateIndex=undefined;
-    this.isEditEnabled=false;
+    this.updateIndex = undefined;
+    this.isEditEnabled = false;
   }
 
   deleteTask(i: number) {
